@@ -1,0 +1,4 @@
+<!--components/dots/index.wxml-->
+<view class="container">
+  <text wx:for="{{count}}" class="dot {{classes[index]}}"></text>
+</view>

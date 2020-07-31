@@ -1,0 +1,39 @@
+/* components/dots/index.wxss */
+.container {
+  width: 100%;
+  height: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dot {
+  position: relative;
+  border-radius: 50%;
+  background: #B2B2B2;
+  width: 16rpx;
+  height: 16rpx;
+  margin-right: 16rpx;
+  transform: scale(0);
+  display: none;
+  opacity: 0;
+  left: -16rpx;
+}
+
+.animate-range {
+  display: inline-block;
+  transition: all 0.25s;
+}
+
+.dot.active {
+  background-color: #000;
+  transform: scale(1);
+  opacity: 1;
+}
+.dot.active-next {
+  transform: scale(0.6);
+  opacity: 0.6;
+}
+.dot.active-next-next {
+  transform: scale(0.3);
+  opacity: 0.3;
+}
